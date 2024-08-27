@@ -32,9 +32,7 @@ export default {
   },
   methods: {
     addItem() {
-      if (this.item.name == "") {
-        alert('Please Enter Task Name');
-      }
+      
       axios
         .post("api/item/store", {
           item: this.item,
